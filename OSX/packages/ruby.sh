@@ -14,3 +14,8 @@ trap 'echo -e "\nabort!" ; exit 1' 1 2 3 15
 brew update
 brew install openssl readline rbenv ruby-build
 
+rbenv install 2.2.3
+rbenv global 2.2.3
+
+rbenv rehash
+
