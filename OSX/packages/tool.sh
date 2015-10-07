@@ -7,10 +7,14 @@ SWD=$(cd $(dirname $0) && pwd)
 # trap
 trap 'echo -e "\nabort!" ; exit 1' 1 2 3 15
 
-# . $SWD/../function/*.sh
+. $SWD/../functions/*.sh
 
-[ exists_brew() -ne 0 ] && echo "NG"
+# assertion {{{
+
+assert_brew_installed
+
+# }}}
 
 brew update
-brew install tree
+brew install nkf tree
 
