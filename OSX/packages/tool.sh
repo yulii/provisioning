@@ -16,5 +16,5 @@ assert_brew_installed
 # }}}
 
 brew update
-brew install nkf tree
+brew install jq nkf tree
 
